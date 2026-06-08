@@ -8,3 +8,9 @@ ios/
 android/
 .env*.local
 expo-env.d.ts
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
