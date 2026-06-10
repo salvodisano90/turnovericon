@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "TURNOVER",
+    "slug": "turnover",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "turnover",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.turnover.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.turnover.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
