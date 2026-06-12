@@ -1,3 +1,4 @@
+import { SupabaseAuthProvider } from './supabaseAuthProvider';
 // services/authProvider.ts — Astrazione AUTH + implementazione LOCALE simulata.
 // Obiettivo: quando arriverà Supabase, basterà fornire un altro oggetto che implementa AuthProvider.
 // Tutta la logica di codice/OTP/recovery è in funzioni PURE testabili (sotto).
@@ -147,4 +148,4 @@ export const LocalAuthProvider: AuthProvider = {
 function stripPwd(u: StoredUser): AuthUser { const { pwd, ...rest } = u; return rest; }
 
 // Provider attivo: oggi LOCALE. Per Supabase: esportare un SupabaseAuthProvider con la stessa interfaccia.
-export const auth: AuthProvider = LocalAuthProvider;
+export const auth: AuthProvider = SupabaseAuthProvider;
