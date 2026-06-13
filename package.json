@@ -8,7 +8,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "doctor": "npx expo-doctor",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "npx expo export -p web && wrangler deploy",
+    "preview": "npx expo export -p web && wrangler dev"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
@@ -40,7 +42,8 @@
     "@babel/core": "^7.25.2",
     "@types/react": "~19.1.0",
     "babel-preset-expo": "^56.0.15",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "wrangler": "^4.100.0"
   },
   "private": true
 }
